@@ -126,9 +126,20 @@ img {
 
 /* header end */
 
+/* START-HERO */
+
 .section-hero {
   background-color: var(--footer-background-color);
   text-align: center;
+}
+
+.container-hero {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
 }
 
 .hero-title {
@@ -145,6 +156,8 @@ img {
   color: var(--primary-with-color);
 }
 .button-hero {
+  border: none;
+  border-radius: 4px;
   min-width: 200px;
   padding: 10px 16px;
   cursor: pointer;
@@ -157,21 +170,32 @@ img {
   color: var(--primary-with-color);
   font-size: 16px;
   line-height: 1.8;
+  margin-bottom: 200px;
 }
 
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--button-accent-color);
 }
+
+/* END-HERO */
+
+/* START-FEATURES */
+
 .section-features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.container-features {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+}
 
-.container,
-.features-list,
-.features-title,
-.features-description {
+.features-list {
   display: flex;
 }
 
@@ -196,6 +220,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
+
+/* END-FEATURES */
+
 .title {
   font-weight: bold;
   font-size: 36px;
@@ -203,7 +230,32 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
+
+/* START-LESSON */
+.section-lesson {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-lesson {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+}
+
+.lesson-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* END-LESSON */
+
+/* START-TEAM */
 
 .section-team {
   background-color: var(--section-background-color);
@@ -211,8 +263,25 @@ img {
   padding-bottom: 94px;
 }
 
+.container-team {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
 .cards {
   background: var(--primary-with-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .title-name {
   font-weight: 500;
@@ -221,6 +290,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .team-position {
   font-style: normal;
@@ -230,10 +303,35 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+  padding-bottom: 30px;
 }
+
+/* TEAM-END */
 .footer {
   background-color: var(--footer-background-color);
 }
+
+.footer-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
 .logo-web-footer {
   font-family: Raleway;
   font-style: normal;
