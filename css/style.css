@@ -7,6 +7,8 @@
   --footer-background-color: #2f303a;
   --button-accent-color: #188ce8;
   --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
+  --border-header-color: #ececec;
 }
 
 /*--START STUDIO--*/
@@ -25,7 +27,17 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid tomato;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 h1,
@@ -57,6 +69,10 @@ img {
 .site-nav-list {
   display: flex;
   align-items: center;
+}
+
+.header {
+  border: 1px solid var(--border-header-color);
 }
 
 .site-nav-list {
@@ -139,7 +155,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid tomato;
 }
 
 .hero-title {
@@ -192,7 +207,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid tomato;
 }
 
 .features-list {
@@ -245,7 +259,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid tomato;
 }
 
 .lesson-list {
@@ -269,15 +282,21 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid tomato;
 }
 
 .team-list {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
-.cards {
+.card-position {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.cards,
+.card-position:not(:last-child) {
+  margin-right: 30px;
   background: var(--primary-with-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -292,8 +311,6 @@ img {
   color: var(--primary-text-color);
   padding-top: 30px;
   padding-bottom: 10px;
-  padding-left: 80px;
-  padding-right: 80px;
 }
 .team-position {
   font-style: normal;
@@ -317,7 +334,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid tomato;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -330,6 +346,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  display: block;
+  padding-bottom: 20px;
 }
 
 .logo-web-footer {
@@ -368,6 +386,26 @@ img {
 /* START PORTFOLIO */
 .section-portfolio {
   color: var(--section-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-button {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 34px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 .button-navigate {
   background-color: var(--section-background-color);
@@ -383,18 +421,49 @@ img {
   cursor: pointer;
   border: 0px;
   border-radius: 3px;
+  padding: 6px 22px;
 }
 .button-navigate:hover,
 .button-navigate:focus {
   background-color: var(--accent-color);
   color: var(--primary-with-color);
 }
+
+.container-works {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.border-cards {
+  border: 1 px solid var(--border-color);
+}
+
+.list-works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-cards-works-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.list-cards-works-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 .title-name-cards {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
 }
 
 .cards-discription {
@@ -404,6 +473,9 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 /* END PORTFOLIO */
